@@ -60,7 +60,7 @@ nav{
     justify-content: flex-end;
     align-items: center;
 
-    background-image: url(../img/programming.jpg);
+    background-image: url(img/programming.jpg);
     background-size: cover;
 }
 .apresentacao-conteudo{
