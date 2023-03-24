@@ -116,10 +116,6 @@ nav{
     height: 40em;
 }
 
-.podeisso-title{
-    width: 100%;
-    height: 30%;
-}
 .projetos-title{
     width: 95%;
 
@@ -339,39 +335,60 @@ nav{
     }
 }
 
-@media screen and (max-width: 500px) {
-    /*------Navigation Bar------
-    nav {
-        flex-direction: row-reverse;
-    }
-    .nav-img {
-        flex-basis: 100%;
-    }
-    .nav-bar{
-        flex-basis: 0%;
-    }
-    .nav-bar .button{
-        transition: .2s;
-        height: 3em;
-        cursor: pointer;
-        display: block;
-    }
-    .nav-bar .nav-content{
-        transition: .2s;
-        display: none;
-        position: absolute;
-        z-index: 1;
-    }
-    .nav-bar:hover .button{
-        transition: .2s;
-    }
-    .nav-bar:hover .nav-content{
-        transition: .2s;
-        text-align: center;
-        width: 100%;
-        background-color: red;
-        display: flex;
-        flex-direction: column;
-    }
-}
 */
+@media screen and (max-width: 500px) {
+    /*------Navigation Bar------*/
+    header{justify-content: flex-end;}
+    .container-img-logo{width: 100%;}
+
+    nav{width: 0;}
+    .nav-content a{display: none;}
+
+    /*------Apresentação------*/
+    .apresentacao{height: 20em;}
+    .apresentacao-conteudo{
+        width: 95%;
+    }
+    .apresentacao-conteudo h1{
+        font-size: 48px;
+    }
+    .apresentacao-conteudo h2{
+        font-size: 32px;
+    }
+    .apresentacao-img{ width: 40px;}
+    .podeisso{
+        display: none;
+    }
+
+    /*------Projetos------*/
+    .projetos{height: 50em;}
+    .projetos-title{font-size: 36px;}
+
+    .img-e-conteudo{
+        height: auto;
+        width: 100%;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+    .podeisso-subtitle{
+        height: 3%;
+    }
+    .projetos-subtitle{
+        width: 95%;
+        align-self: flex-end;
+    }
+    .projetos-container-img{
+        height: 35%;
+        width: 90%;
+    }
+    .podeisso-conteudo{
+        height: 0%;
+    }
+
+    .projetos-conteudo{
+        width: 90%;
+        align-self: center;
+    }
+    .projetos-conteudo h2{font-size: 32px;}
+    .projetos-conteudo h3{font-size: 14px;}
+}
