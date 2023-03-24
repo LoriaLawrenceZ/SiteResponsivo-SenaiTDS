@@ -338,11 +338,30 @@ nav{
 */
 @media screen and (max-width: 500px) {
     /*------Navigation Bar------*/
-    header{justify-content: flex-end;}
+    header{
+        justify-content: flex-end;
+
+        position: sticky;
+        top: 0;
+    }
     .container-img-logo{width: 100%;}
 
-    nav{width: 0;}
-    .nav-content a{display: none;}
+    nav{width: auto;}
+    .nav-content{
+        flex-direction: column;
+    }
+    .nav-content{display: none;}
+ 
+    .btn-hamburguer{
+        height: 2em;
+
+        display: block;
+        cursor: pointer;
+    }
+    .btn-hamburguer:hover .nav-content a{
+        display: block;
+        width: 100%;
+    }
 
     /*------Apresentação------*/
     .apresentacao{height: 20em;}
@@ -365,7 +384,7 @@ nav{
     .projetos-title{font-size: 36px;}
 
     .img-e-conteudo{
-        height: auto;
+        height: 40em;
         width: 100%;
         flex-wrap: nowrap;
         justify-content: flex-start;
@@ -380,6 +399,8 @@ nav{
     .projetos-container-img{
         height: 35%;
         width: 90%;
+
+        justify-content: center;
     }
     .podeisso-conteudo{
         height: 0%;
