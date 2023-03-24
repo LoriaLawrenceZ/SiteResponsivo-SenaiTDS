@@ -9,7 +9,7 @@ html{
 
 /*----Navigation Bar----*/
 header{
-    background-color: red;
+    background-color: #F9003D;
 
     display: flex;
     align-items: center;
@@ -18,10 +18,12 @@ header{
 
 .container-img-logo{
     width: 20%;
+
+    display: flex;
     justify-content: center;
 }
 .img-logo-senai{
-    height: 3em;
+    height: 2.5em;
     display: block;
 }
 nav{
@@ -34,7 +36,7 @@ nav{
 .nav-content a{
     color: white;
     text-decoration: none;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Bebas Neue', cursive;
     font-size: 24px;
     
     transition: .3s;
@@ -64,24 +66,41 @@ nav{
 
     display: flex;
     justify-content: flex-end;
-    align-items: center;
 
     background-image: url(img/programming.jpg);
     background-size: cover;
 }
 .apresentacao-conteudo{
     width: 45%;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 .apresentacao-conteudo h1{
     color: white;
     font-size: 84px;
     font-family: 'Teko', sans-serif;
+
+    width: 100%;
+    align-self: flex-end;
+}
+.linha-amarela{
+    border: solid 1px #FFAF00;
+    width: 100%;
 }
 .apresentacao-conteudo h2{
     font-family: 'Courier Prime', monospace;
     font-size: 44px;
     color: rgb(255, 0, 34);
+    
+    width: 100%;
+    align-self: flex-start
 }
+.apresentacao-img{
+    width: 60px;
+}
+
 .podeisso{
     width: 50%;
 }
@@ -93,10 +112,16 @@ nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+
+    height: 40em;
+}
+
+.podeisso-title{
+    width: 100%;
+    height: 30%;
 }
 .projetos-title{
-    width: 45%;
-    height: 2em;
+    width: 95%;
 
     align-self: flex-end;
 
@@ -104,47 +129,43 @@ nav{
     font-size: 58px;
     font-family: 'Teko', sans-serif;
 }
-.podeisso-title{
-    width: 50%;
-}
-.podeisso-subtitle{
-    width: 50%;
-}
-.projetos-subtitle{
-    height: 2em;
-    width: 50%;
-
-    justify-self: flex-start;
-    font-family: 'Courier Prime', monospace;
-    font-size: 30px;
-    color: white;
-}
 
 .img-e-conteudo{
     height: 30em;
-    width: 100%;
 
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
 }
+.projetos-subtitle{
+    width: 50%;
 
+    font-family: 'Courier Prime', monospace;
+    font-size: 30px;
+    color: white;
+    align-self: flex-start;
+}
 .projetos-container-img{
-    height: 90%;
+    height: 80%;
     width: 40%;
 
     overflow: hidden;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-self: center;
 }
-
 .podeisso-conteudo{
+    height: 100%;
     width: 5%;
 }
 
 .projetos-conteudo{
     width: 45%;
+
+    align-self: flex-start;
 }
+
 .projetos-conteudo h2{
     color: rgb(224, 169, 16);
     font-size: 58px;
