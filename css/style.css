@@ -1,0 +1,483 @@
+@charset "UTF-8";
+
+/*----Mexendo UNIVERSALMENTE----*/
+*{margin: 0; padding: 0;}
+
+html{
+    background-color: black;
+}
+
+/*----Apresentação----*/
+.apresentacao{
+    height: 30em;
+
+    display: flex;
+    justify-content: flex-end;
+
+    background-image: url(../img/programming.jpg);
+    background-size: cover;
+}
+.apresentacao-conteudo{
+    width: 45%;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.apresentacao-conteudo h1{
+    color: white;
+    font-size: 84px;
+    font-family: 'Teko', sans-serif;
+
+    width: 100%;
+    align-self: flex-end;
+}
+.linha-amarela{
+    border: solid 1px #FFAF00;
+    width: 100%;
+}
+.apresentacao-conteudo h2{
+    font-family: 'Courier Prime', monospace;
+    font-size: 44px;
+    color: rgb(255, 0, 34);
+    
+    width: 100%;
+    align-self: flex-start
+}
+.apresentacao-img{
+    width: 60px;
+}
+
+.podeisso{
+    width: 50%;
+}
+
+/*----Projetos----*/
+.projetos{
+    background-color: rgba(9, 0, 87, 0.15);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    height: 40em;
+}
+
+.projetos-title{
+    width: 95%;
+
+    align-self: flex-end;
+
+    color: rgb(207, 0, 34);
+    font-size: 58px;
+    font-family: 'Teko', sans-serif;
+}
+
+.img-e-conteudo{
+    height: 30em;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.projetos-subtitle{
+    width: 50%;
+
+    font-family: 'Courier Prime', monospace;
+    font-size: 30px;
+    color: white;
+    align-self: flex-start;
+}
+.projetos-container-img{
+    height: 80%;
+    width: 40%;
+
+    overflow: hidden;
+    display: flex;
+    justify-self: center;
+}
+.podeisso-conteudo{
+    height: 100%;
+    width: 5%;
+}
+
+.projetos-conteudo{
+    width: 45%;
+
+    align-self: flex-start;
+}
+
+.projetos-conteudo h2{
+    color: rgb(224, 169, 16);
+    font-size: 58px;
+    font-family: 'Teko', sans-serif;
+}
+.projetos-conteudo h3{
+    color: white;
+}
+
+/*----Opções----*/
+.info{
+    height: 15em;
+
+    background-image: url(../img/FundoTech.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    font-family: 'Courier Prime', monospace;
+    font-size: 14px;
+    color: white;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card1, .card2, .card3{
+    height: 50%;
+    width: 25%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card1 h1, .card2 h1, .card3 h1{
+    height: 40%;
+}
+.cardbox{
+    border: solid blueviolet 2px;
+    color: blueviolet;
+
+    width: 80%;
+    height: 90%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*----ENDEREÇO----*/
+.endereco{
+    height: 30em;
+
+    background-image: url(../img/FundoTech2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.endereco-info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    width: 80%;
+    height: 100%;
+}
+
+.endereco-title{
+    color: rgb(224, 169, 16);
+    font-size: 58px;
+    font-family: 'Teko', sans-serif;
+
+    height: 30%;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+.endereco-dados{
+    border: solid blueviolet 2px;
+    color: blueviolet;
+    background-color: #010010;
+
+    width: 100%;
+    height: 50%;
+
+    display: flex;
+    align-items: center;
+}
+.podeisso-ED{
+    width: 5%;
+}
+.endereco-dados h2{
+    width: 50%;
+
+    font-family: 'Courier Prime', monospace;
+    font-size: 24px;
+}
+.podeisso-ED2{
+    width: 10%;
+}
+.mapa{
+    height: 130%;
+    width: 30%;
+    padding-bottom: 2%;
+
+    align-self: flex-end;
+}
+
+/*----Footer----*/
+footer{
+    background-color: #F9003D;
+    height: 2.5em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer span{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+}
+
+/*
+@media screen and (max-width: 1400px) {
+    /*------Article APRESENTACAO------
+    .apresentacao {
+        padding: 4% 4% 4% 5%;
+    }
+
+    .apresentacao section h1 {
+        font-size: 80px;
+    }
+
+    .apresentacao section h2 {
+        font-size: 40px;
+    }
+
+    /*------Article PROJETOS------
+    .projetos h1 {
+        padding: 4% 4% 0 5%;
+        font-size: 54px;
+    }
+
+    .projetos section {
+        padding: 2em 3em 3em 5%;
+        display: flex;
+        align-items: center;
+    }
+
+    .conteudo {
+        align-self: flex-start;
+    }
+
+    .conteudo p {
+        font-size: 28px;
+    }
+
+    .conteudo h2 {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    /*------Article APRESENTACAO------
+    .apresentacao section h1 {
+        font-size: 66px;
+    }
+
+    .apresentacao section h2 {
+        font-size: 34px;
+    }
+
+    /*------Article PROJETOS------
+    .projetos h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .projetos section {
+        padding: 2em 7% 2em 7%;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-projetos {
+        order: 2;
+        margin: 4% 0 0 0;
+        width: 100%;
+    }
+
+    .img-projetos {
+        height: 20em;
+    }
+
+    .conteudo {
+        text-align: center;
+        width: 100%;
+    }
+
+    .conteudo p {
+        font-size: 20px;
+    }
+
+    .conteudo h2 {
+        font-size: 48px;
+    }
+
+    .conteudo h3 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    /*------Navigation Bar------
+    nav {
+        flex-direction: row-reverse;
+    }
+    .nav-img {
+        flex-basis: 100%;
+    }
+    .nav-bar{
+        flex-basis: 0%;
+    }
+    .nav-bar .button{
+        transition: .2s;
+        height: 3em;
+        cursor: pointer;
+        display: block;
+    }
+    .nav-bar .nav-content{
+        transition: .2s;
+        display: none;
+        position: absolute;
+        z-index: 1;
+    }
+    .nav-bar:hover .button{
+        transition: .2s;
+    }
+    .nav-bar:hover .nav-content{
+        transition: .2s;
+        width: 100%;
+        background-color: red;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*------Article APRESENTACAO------
+    .apresentacao {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .apresentacao section {
+        text-align: center;
+        width: 100%;
+    }
+
+    .apresentacao section h1 {
+        font-size: 60px;
+    }
+
+    .apresentacao section h2 {
+        font-size: 30px;
+    }
+
+    /*------Article PROJETOS------
+    .projetos h1 {
+        font-size: 46px;
+        text-align: center;
+    }
+
+    .conteudo p {
+        font-size: 18px;
+    }
+
+    .conteudo h2 {
+        font-size: 40px;
+    }
+
+    .conteudo h3 {
+        font-size: 14px;
+    }
+}
+
+*/
+@media screen and (max-width: 500px) {
+    /*------Navigation Bar------*/
+    header{
+        justify-content: flex-end;
+
+        position: sticky;
+        top: 0;
+    }
+    .container-img-logo{width: 100%;}
+
+    nav{width: auto;}
+    .nav-content{
+        flex-direction: column;
+    }
+    .nav-content{display: none;}
+ 
+    .btn-hamburguer{
+        height: 2em;
+
+        display: block;
+        cursor: pointer;
+    }
+    .btn-hamburguer:hover .nav-content a{
+        display: block;
+        width: 100%;
+    }
+
+    /*------Apresentação------*/
+    .apresentacao{height: 20em;}
+    .apresentacao-conteudo{
+        width: 95%;
+    }
+    .apresentacao-conteudo h1{
+        font-size: 48px;
+    }
+    .apresentacao-conteudo h2{
+        font-size: 32px;
+    }
+    .apresentacao-img{ width: 40px;}
+    .podeisso{
+        display: none;
+    }
+
+    /*------Projetos------*/
+    .projetos{height: 50em;}
+    .projetos-title{font-size: 36px;}
+
+    .img-e-conteudo{
+        height: 40em;
+        width: 100%;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+    .podeisso-subtitle{
+        height: 3%;
+    }
+    .projetos-subtitle{
+        width: 95%;
+        align-self: flex-end;
+    }
+    .projetos-container-img{
+        height: 35%;
+        width: 90%;
+
+        justify-content: center;
+    }
+    .podeisso-conteudo{
+        height: 0%;
+    }
+
+    .projetos-conteudo{
+        width: 90%;
+        align-self: center;
+    }
+    .projetos-conteudo h2{font-size: 32px;}
+    .projetos-conteudo h3{font-size: 14px;}
+}

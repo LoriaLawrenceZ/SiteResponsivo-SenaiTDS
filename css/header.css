@@ -1,0 +1,64 @@
+/*----Navigation Bar----*/
+header{
+    background-color: #F9003D;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-img-logo{
+    width: 20%;
+
+    display: flex;
+    justify-content: center;
+}
+.img-logo-senai{
+    height: 2.5em;
+    display: block;
+}
+nav{
+    width: 70%;
+}
+.nav-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-content a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 24px;
+    
+    transition: .3s;
+    
+    flex-basis: 25%;
+    text-align: center;
+}
+.contato{
+    border: solid purple 3px;
+    background-color: blueviolet;
+
+    transition: .3s;
+}
+.nav-content a:hover:not(.contato){
+    color: red;
+    background-color: white;
+
+    height: inherit;
+
+    transition: .3s;
+
+    flex-basis: 30%;
+}
+.contato:hover{
+    background-color:rgb(165, 70, 255);
+
+    transition: .3s;
+    flex-basis: 30%;
+}
+
+.btn-hamburguer{
+    display: none;
+}
