@@ -96,7 +96,11 @@ html{
 
     overflow: hidden;
     display: flex;
-    justify-self: center;
+    justify-content: center;
+    align-items: center;
+}
+.projetos-container-img img{
+    width: 100%;
 }
 .podeisso-conteudo{
     height: 100%;
@@ -238,6 +242,13 @@ footer span{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
 }
 
+@media screen and (max-width: 1750px){
+    .projetos-container-img img{
+        width: auto;
+        height: 100%;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     /*------Article PROJETOS------*/
     .projetos{
@@ -257,8 +268,13 @@ footer span{
     }
     .projetos-container-img{
         height: 60%;
-        width: 90%;
+        width: 80%;
         justify-content: center;
+        align-items: center;
+    }
+    .projetos-container-img img{
+        height: auto;
+        width: 100%;
     }
     .podeisso-subtitle{
         width: 100%;
@@ -305,6 +321,7 @@ footer span{
         align-items: center;
     }
     .projetos-container-img img{
+        height: auto;
         width: 100%;
     }
     .podeisso-subtitle{
