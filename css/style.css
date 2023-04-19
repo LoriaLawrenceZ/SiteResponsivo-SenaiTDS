@@ -337,7 +337,7 @@ footer span{
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
     /*------Article Apresentação------*/
     .apresentacao-conteudo h1{
         font-size: 70px;
